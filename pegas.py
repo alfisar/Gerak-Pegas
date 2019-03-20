@@ -18,15 +18,11 @@ i = 0
 a,x,v,t = [],[],[],[]
 
 x.append(1)
-x.append(1)
-v.append(v0)
 v.append(v0)
 t.append(t0)
-t.append(t0)
-a.append(0)
 a.append(0)
 
-j = 1
+j = 0
 while i < tmax :
     a.append((-1*k/m) *x[j])
     v.append(v[j] + a[j+1] * dt)
@@ -34,6 +30,7 @@ while i < tmax :
     t.append(i)
     i+=dt
     j+=1
-    
+
+
 plt.plot(t,x)
 plt.show()
